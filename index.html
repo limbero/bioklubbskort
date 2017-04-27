@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SF Bio Klubbkort</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <button id="x">&#x2715;</button>
+    <form id="kortform" onsubmit="return false">
+      <input id="kundkortnummer" type="text" placeholder="Kortnummer" value="">
+      <input id="kundnamn" type="text" placeholder="Namn" value="">
+      <button id="kortknapp">Gör kortet</button>
+    </form>
+    <div class="kort">
+      <img id="sf" src="res/sf.png">
+      <img id="bioklubben" src="res/bioklubben.jpg">
+      <h1 class="guld medlem">GULDMEDLEM</h1>
+      <h2 id="namn" class="guld namn"></h2>
+      <p class="streckkod"><svg id="streckkod"></svg></p>
+    </div>
+    <script src="https://cdn.jsdelivr.net/jsbarcode/3.6.0/JsBarcode.all.min.js" charset="utf-8"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
